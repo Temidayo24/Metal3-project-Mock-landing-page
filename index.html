@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="metal-banner">
+      <section>
+        <a href="" class="logo">
+          <img src="assets/metal3-logo.svg" alt="" />
+        </a>
+        <nav class="metal-navbar">
+          <ul>
+            <li>
+              <a href=""><button>Documentation</button></a>
+            </li>
+            <li>
+              <a href=""><button>Community Resources</button></a>
+            </li>
+            <li>
+              <a href=""><button>Blog</button></a>
+            </li>
+            <li>
+              <a href=""><button class="tryit">Try it!</button></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <div class="description-metal">
+          <h1 class="metal-h1">Metal<sup>3</sup></h1>
+          <h3>Bare Metal Host provisioning for <span class="kubernetes-colored">Kubernetes</span></h3>
+        </div>
+        <a href=""><button class="get-started">Get Started</button></a>
+      </section>
+    </header>
+    <main>
+      <section id="what-is-metal3">
+        <img src="assets/home-right-image.svg" alt="" class="bg-kub-img">
+        <div>
+          <h2>Metal<sup class="sup2">3</sup> (Metal Kubed)</h2>
+        <p>
+          <span class="metal-3">Metal<sup>3</sup></span> is a Kubernetes based
+          project for managing bare metal machines.It is an infrastructure
+          provider for the cluster API (K8s SIG Life-Cycle). It manages your
+          underlying infrastructure through Kubernetes APIs, which allows you to
+          install and scale Kubernetes; avoids the need for an external
+          dependency by running inside your cluster; integrates with the machine
+          API from SIG Cluster-Lifecycle, which allows your bare metal cluster
+          to manage its own growth, similar to cloud-based clusters.
+          <br />
+          <br>
+          Metal<sup>3</sup> is a kubernetes application and is therefore managed
+          through Kubernetes interfaces.
+        </p>
+        <a href="" class="read-more">
+          <button>Read more </button>
+          <img src="assets/right-arrows.png" alt="" />
+        </a>
+        </div>
+      </section>
+      <section id="metal-features">
+        <div class="metal-compo-sub">
+          <span>Why Metal<sup>3</sup>?</span>
+        </div>
+        <div class="features-metal">
+          <div class="features">
+            <img src="assets/metal3-logo.svg" alt="">
+          <h3>Automated Cleaning</h3>
+          <p>When enabled, Metal3 cleans host disks when node is provisioned for the first time and on every time deprovisioned.</p>
+        </div>
+        <div class="features">
+          <img src="assets/metal3-logo.svg" alt="">
+          <h3>Automatic secure boot</h3>
+          <p>Install and securely boot an Operating System (OS) of your choice which protects the host from loading malicious code in the boot process before loading the provisioned Operating System.</p>
+        </div>
+        <div class="features">
+          <img src="assets/metal3-logo.svg" alt="">
+          <h3>Detached Annotation</h3>
+          <p>Deploy Kubernetes and upgrade Kubernetes or the OS of your clusters with a non-disruptive rolling strategy.</p>
+        </div>
+        <div class="features">
+          <img src="assets/metal3-logo.svg" alt="">
+          <h3>Remediation</h3>
+          <p>Automatically remediate failed nodes by rebooting them and removing them from the cluster if necessary.</p>
+        </div>
+        </div>
+      </section>
+      <section id="metal-components">
+        <div class="metal-compo-sub">
+          <span>Metal<sup>3</sup> Components</span>
+        </div>
+        <div class="details">
+          <details class="component-details">
+            <summary>
+              <span class="summary-metal">Baremetal Operator (BMO)</span>
+              <img src="assets/right-arrows.png" alt="" />
+            </summary>
+            <p>
+              The <strong><a href="" title="Click to read more">Baremetal Operator</a></strong> is a Kubernetes controller
+              for managing BareMetal Hosts (BMH) resources. It assumes authority
+              over Kubernetes Nodes, manages and enforces the desired state
+              defined in a BareMetal Hosts which correspond to the Nodes Ports.
+              And this is done using Ironic.
+            </p>
+          </details>
+          <details class="component-details">
+            <summary>
+              <span class="summary-metal"
+                >Cluster-api-provider-Metal3 (CAPM3)</span
+              >
+              <img src="assets/right-arrows.png" alt="" />
+            </summary>
+            <p>
+              <strong><a href="" title="Click to read more">Cluster-api-provider-Metal3 (CAPM3)</a></strong> is a
+              declarative/self management API for Kubernetes used to create,
+              configure and manage clusters. It provides infrastructure for the
+              Kubernetes Cluster API and enables users to install clusters on
+              BareMetal Hosts.
+            </p>
+          </details>
+          <details class="component-details">
+            <summary>
+              <span class="summary-metal">Ironic</span>
+              <img src="assets/right-arrows.png" alt="" />
+            </summary>
+            <p>
+              <strong><a href="" title="Click to read more">Ironic</a></strong> is the hidden engine that operates to
+              manage bare metal hosts behind native Kubernetes API. It automates
+              the provisioning and managing of bare metal machines. It is
+              API-driven and includes a full set of RESTful APIs. Its features
+              include bare metal “nodes” auto-registration, hardware
+              specifications retrieval of newly discovered bare metal machines,
+              configuration and provisioning with custom operating system
+              images, machines reset, cleaning for re-provisioning or
+              end-of-life retirement.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section id="community-metal">
+        <img src="assets/home-left-image.svg" alt="" />
+        <p>
+          Connect with the Metal3.io community to learn more, contribute ideas,
+          and help build the future of Metal3.io. Learn more about how to make
+          the most of the metal3 features in your work.
+        </p>
+        <a href=""><button class="join-convo-metal">Join our community</button></a>
+      </section>
+    </main>
+    <footer id="footer-metal">
+      <div class="footer-text-metal">
+        <p>We are a <a href="">Cloud Native Computing Foundation</a> Sandbox Project.</p>
+        <div class="cncf">
+          <img src="assets/cncf.png" alt="">
+        </div>
+        <p>
+          Copyright 2023 The Metal³ Contributors -
+          <a href="http://" target="_blank">Privacy Statement</a>
+        </p>
+        <p>Copyright 2023 The Linux Foundation. All Rights Reserved.</p>
+        <p>
+          The Linux Foundation has registered trademarks and uses trademarks.
+          For a list of trademarks of The Linux Foundation, please see our
+          <a href="" target="_blank">Trademark Usage</a> page.
+        </p>
+      </div>
+      <div class="socials-metal">
+        <div class="subscribe">
+          <p>Interested in joining our mailing lists? Kindly subscribe.</p>
+          <form action="">
+            <input type="email" placeholder="email address">
+            <button>Subscribe</button>
+          </form>
+        </div>
+        <div class="socials">
+        <a href=""><img src="assets/github.svg" alt="" /></a>
+        <a href=""> <img src="assets/mail.svg" alt="" /></a>
+        <a href=""><img src="assets/slack.svg" alt="" /></a>
+        <a href=""><img src="assets/youtube.svg" alt="" /></a>
+        <a href=""> <img src="assets/twitter.svg" alt="" /></a>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

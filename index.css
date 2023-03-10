@@ -1,0 +1,414 @@
+* {
+  font-family: "nunito sans", sans-serif;
+  color: #202020;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+
+
+a,
+a > button {
+  cursor: pointer;
+}
+
+#metal-banner {
+  padding: 10px 5%;
+  height: 80vh;
+  background: linear-gradient(hsla(0, 0%, 13%, 0.754), hsla(0, 0%, 13%, 0.869)),
+    url(assets/787e904b-46b9-432e-bfb8-7047985211a2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 5px solid #01eec4;
+}
+
+#metal-banner > section:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+nav.metal-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5em;
+}
+
+nav.metal-navbar a {
+  text-decoration: none;
+}
+
+nav.metal-navbar a button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+nav.metal-navbar li:nth-of-type(1) a button,
+nav.metal-navbar li:nth-of-type(3) a button {
+  color: #01eec4;
+}
+
+nav.metal-navbar li:nth-of-type(1) a button:hover,
+nav.metal-navbar li:nth-of-type(3) a button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+nav.metal-navbar li:nth-of-type(2) a button {
+  color: white;
+}
+
+nav.metal-navbar li:nth-of-type(2) a button:hover {
+  color: #01eec4;
+  text-decoration: underline;
+}
+
+nav.metal-navbar .tryit {
+  border: none;
+  background-color: #01eec4;
+  color: white;
+  width: 70px;
+}
+
+nav.metal-navbar .tryit:hover {
+  background-color: white;
+  color: #008585;
+}
+
+#metal-banner > section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  gap: 2em;
+}
+
+.metal-h1 {
+  font-size: 4em;
+  color: #01eec4;
+  font-weight: lighter;
+}
+
+sup {
+  position: relative;
+  top: -10px;
+}
+
+.metal-h1 sup {
+  font-size: 0.5em;
+  color: #01eec4;
+}
+
+#metal-banner .description-metal h3 {
+  font-weight: 400;
+  color: white;
+  margin-top: -40px;
+  font-size: 1.2em;
+}
+
+#metal-banner .kubernetes-colored {
+  color: #01eec4;
+}
+
+button.get-started {
+  width: 200px;
+  height: 40px;
+  text-align: left;
+  padding-left: 15px;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  background-color: #01eec4;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+button.get-started:hover {
+  background-color: #008585;
+  color: white;
+  transition-delay: .2s;
+  transform: scale(1.05);
+}
+
+#what-is-metal3 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2em;
+  height: fit-content;
+  padding: 3em 5%;
+  border-bottom: 5px solid #01eec4;
+}
+
+#what-is-metal3 div {
+  width: 100%;
+}
+
+#what-is-metal3 .bg-kub-img {
+  opacity: 0.7;
+  width: 100%;
+}
+
+#what-is-metal3 p {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#what-is-metal3 h2 {
+  font-size: 2.2em;
+  border-left: 5px solid #01eec4;
+  padding-left: 10px;
+  font-weight: 400;
+  margin: 0;
+  color: #008585;
+}
+
+#what-is-metal3 .sup2 {
+  color: #008585;
+}
+
+.metal-3,
+.metal-3 > sup {
+  color: #01eec4;
+  font-weight: 600;
+}
+
+a.read-more {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+#what-is-metal3 button {
+  background: transparent;
+  border: 0;
+  color: #008585;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0;
+}
+
+.read-more img {
+  width: 40px;
+  filter: invert(33%) sepia(62%) saturate(4837%) hue-rotate(162deg)
+    brightness(90%) contrast(101%);
+}
+
+#metal-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: fit-content;
+  background-color: hsla(169, 99%, 47%, 0.137);
+  border-bottom: 5px solid #01eec4;
+  padding: 3em 5%;
+}
+
+.features-metal {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.features h3 {
+  color: #008585;
+  font-size: 1.5em;
+}
+
+.features img {
+  height: 50px;
+}
+
+.features p {
+  font-size: 1.2em;
+}
+
+#metal-components {
+  height: fit-content;
+  padding: 3em 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-bottom: 5px solid #01eec4;
+}
+
+.metal-compo-sub {
+  font-size: 2.2em;
+  border-left: 5px solid #01eec4;
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.metal-compo-sub span,
+.metal-compo-sub sup {
+  color: #008585;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  height: fit-content;
+  width: 60%;
+  padding: 0.5em 0;
+  font-size: 1.2em;
+}
+
+.component-details {
+  background-color: hsla(0, 0%, 13%, 0.115);
+}
+
+.component-details summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.summary-metal {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.component-details img {
+  width: 40px;
+  filter: invert(33%) sepia(62%) saturate(4837%) hue-rotate(162deg)
+    brightness(90%) contrast(101%);
+}
+
+.component-details p {
+  border-top: 2px solid #01eec4;
+  padding: 1em;
+}
+
+.component-details p a {
+  color: #008585;
+}
+
+#community-metal {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 3em 5%;
+  background-color: hsla(0, 0%, 13%, 0.115);
+  font-size: 1.2em;
+  border-bottom: 5px solid #01eec4;
+}
+
+#community-metal p {
+  width: 80%;
+  text-align: center;
+}
+
+#community-metal img {
+  max-width: 40%;
+}
+
+.join-convo-metal {
+  width: 250px;
+  padding: 10px;
+  background-color: #01eec4;
+  border: 0;
+  font-size: 1em;
+}
+
+.join-convo-metal:hover {
+  background-color: #008585;
+}
+
+#footer-metal {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 2%;
+  font-size: 0.9em;
+}
+
+#footer-metal p {
+  color: white;
+}
+
+.footer-text-metal {
+  width: 60%;
+}
+
+.footer-text-metal a {
+  color: #01eec4;
+}
+
+.cncf {
+  background-color: #01eec4;
+  width: fit-content;
+  padding: 10px;
+}
+
+.socials-metal,
+.subscribe  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.subscribe form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe input {
+border: 0;
+padding: 15px 10px ;
+width: 250px;
+outline: 0;
+}
+
+.subscribe button {
+  border: 0;
+  background-color: #01eec4;
+  padding: 15px 0;
+  width: 100px;
+  font-weight: 600;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.socials img {
+  width: 40px;
+  filter: invert(79%) sepia(69%) saturate(3379%) hue-rotate(118deg)
+    brightness(101%) contrast(102%);
+}
+
+#footer-metal .subscribe p {
+  color: #01eec4;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
